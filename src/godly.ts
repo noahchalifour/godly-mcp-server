@@ -9,7 +9,7 @@ import sharp from "sharp";
 
 export const BASE = "https://godly.design";
 const CDN = "https://cdn.godly.design";
-const UA = "godly-mcp-server/1.0 (+https://github.com/; MCP design-inspiration client)";
+const UA = "godly-mcp-server/1.0 (+https://github.com/noahchalifour/godly-mcp-server)";
 const INDEX_TTL_MS = 60 * 60 * 1000;
 
 export type Kind = "website" | "app" | "template";

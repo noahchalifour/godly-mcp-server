@@ -18,7 +18,7 @@
     "ui",
     "ux"
   ],
-  "author": "",
+  "author": "Noah Chalifour",
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.32.2",
@@ -38,5 +38,13 @@
   ],
   "engines": {
     "node": ">=18.17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noahchalifour/godly-mcp-server.git"
+  },
+  "homepage": "https://github.com/noahchalifour/godly-mcp-server#readme",
+  "bugs": {
+    "url": "https://github.com/noahchalifour/godly-mcp-server/issues"
   }
 }

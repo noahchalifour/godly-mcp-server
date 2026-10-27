@@ -21,6 +21,7 @@ A typical agent flow: `search_inspiration` → `get_inspiration` → `view_image
 Requires Node.js 18.17 or later.
 
 ```bash
+git clone https://github.com/noahchalifour/godly-mcp-server.git
 cd godly-mcp-server
 npm install      # also builds dist/
 npm test         # end-to-end tests against live godly.design
@@ -29,7 +30,7 @@ npm test         # end-to-end tests against live godly.design
 ### Claude Code
 
 ```bash
-claude mcp add godly -- node /Users/nchalifo/GitHub/godly-mcp-server/dist/index.js
+claude mcp add godly -- node /absolute/path/to/godly-mcp-server/dist/index.js
 ```
 
 ### Claude Desktop, Cursor, and other MCP clients
@@ -39,7 +40,7 @@ claude mcp add godly -- node /Users/nchalifo/GitHub/godly-mcp-server/dist/index.
   "mcpServers": {
     "godly": {
       "command": "node",
-      "args": ["/Users/nchalifo/GitHub/godly-mcp-server/dist/index.js"]
+      "args": ["/absolute/path/to/godly-mcp-server/dist/index.js"]
     }
   }
 }
@@ -52,3 +53,7 @@ claude mcp add godly -- node /Users/nchalifo/GitHub/godly-mcp-server/dist/index.
 - Godly does not expose categories or styles for websites. Search websites by keyword (the description and industry are searched) or use the section galleries.
 - Images are returned as JPEG at 1024px wide by default (configurable from 200 to 1280px), in tiles of up to 1600px tall, to keep each response a reasonable size for model context.
 - This server depends on Godly's current page structure. If Godly changes it, the parsing in `src/godly.ts` may need updating.
+
+## License
+
+MIT
